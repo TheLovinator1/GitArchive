@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Archive git repositories" name="description"/>
+</head>
+<body>
+<h1>Archive/backup Git repositories</h1>
+<p>
+    This is a simple web application that allows you to archive/backup Git
+    repositories. (Only GitHub repositories are currently supported.)
+</p>
+<p>
+    The Git repository is sent to Gitea (a Git hosting service) and added as a
+    mirror. The mirror is then accessible from the web. The mirror is
+    automatically updated when new commits are pushed to the original
+    repository.
+</p>
+<p>For example, https://github.com/PyGithub/PyGithub</p>
+<form method="post">
+    <input name="repository" placeholder="Git repository URL" type="text"/>
+    <input type="submit" value="Archive"/>
+</form>
+<!-- Only show if a post request  -->
+{% if result is defined %}
+<p>{{ result }}</p>
+{% endif %}
+</body>
+</html>
