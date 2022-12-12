@@ -7,13 +7,13 @@ license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.85.0"
-uvicorn = "^0.19.0"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
 python-multipart = "^0.0.5"
-pytest = "^7.1.2"
-Jinja2 = "^3.1.2"
-PyGithub = "^1.55"
-py-gitea = "^0.2.1"
+pytest = "^7.2.0"
+jinja2 = "^3.1.2"
+pygithub = "^1.57"
+py-gitea = "^0.2.4"
 
 [tool.poetry.dev-dependencies]
 
